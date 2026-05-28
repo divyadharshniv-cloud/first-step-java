@@ -1,168 +1,248 @@
-package Day_3;
-// Pattern 12 — Number crown
-// 1            1
-// 1 2        2 1
-// 1 2 3    3 2 1
-// 1 2 3 4 4 3 2 1
-// public class patterns {
-//     public static void main(String[] args){
-//         for(int i=1;i<=4;i++){
-//             //pattern
-//             for(int j=1;j<=i;j++){
-//                 System.out.print(j);
-//             }
-//             //space
-//             for(int j=1;j<=(2*(4-i));j++){
-//                 System.out.print(" ");
-//             }
-//             for(int j=i;j>=1;j--){
-//                 System.out.print(j);
-//             }
-//             System.out.println();
-//         }
-// }}
-
-
-// public class patterns {
-//     public static void main(String[] args){
-//         for(int i=1;i<=6;i++){
-//             for(int j=1;j<=i;j++){
-//                 if(j%2!=0){
-//                     System.out.print("+");
-//                 }
-//                 else{
-//                     System.out.print("-");
-//                 }
-//             }
-//             System.out.println();
-//         }
-       
-// }}
-
-// Pattern 13 — Continuous numbers
-// 1
-// 2 3
-// 4 5 6
-// 7 8 9 10
-// public class patterns {
-//     public static void main(String[] args){
-//         int num=1;
-//         for(int i=1;i<=4;i++){
-//             for(int j=1;j<=i;j++){
-//                  System.out.print(num++ +" ");
-//             }
-//             System.out.println();
-//         } 
-// }}
-
-
-// Pattern 14 — Letter triangle
-// A
-// A B
-// A B C
-// A B C D
-// A B C D E
-// public class patterns {
-//     public static void main(String[] args){
-//         for(int i=1;i<=5;i++){
-//             for(int j=0;j<i;j++){
-//                  System.out.print((char)('A'+j) +" ");
-//             }
-//             System.out.println();
-//         } 
-// }}
-
-
-// Pattern 15 — Inverted letter triangle
-// A B C D E
-// A B C D
-// A B C
-// A B
-// A
-// public class patterns {
-//     public static void main(String[] args){
-//         for(int i=1;i<=5;i++){
-//             for(int j=0;j<(5-i+1);j++){
-//                  System.out.print((char)('A'+j) +" ");
-//             }
-//             System.out.println();
-//         }
-       
-// }}
-
-// Pattern 16 — Same letter each row
-// A
-// B B
-// C C C
-// D D D D
-// E E E E E
-// public class patterns {
-//     public static void main(String[] args){
-//         for(int i=1;i<=5;i++){
-//             for(int j=1;j<=i;j++){
-//                  System.out.print((char)('A'+i-1) +" ");
-//             }
-//             System.out.println();
-//         }
-       
-// }}
-
-
-// Pattern 17 — Letter pyramid
-//     A
-//    A B
-//   A B C
-//  A B C D
-// A B C D E
-// public class patterns {
-//     public static void main(String[] args){
-//         for(int i=1;i<=5;i++){
-//             //space
-//             for(int j=0;j<=(5-i);j++){
-//                  System.out.print(" ");
-//             }
-//             //pattern
-//             for(int j=0;j<i;j++){
-//                 System.out.print((char)('A'+j)+" ");
-//             }   
-//             System.out.println();
-//         }
-// }}
-
-
-// Pattern 18 — Reverse letter triangle
-// E
-// E D
-// E D C
-// E D C B
-// E D C B A
-// public class patterns {
-//     public static void main(String[] args){
-//         for(int i=1;i<=5;i++){
-//             for(int j=0;j<i;j++){
-//                  System.out.print((char)('E'-j)+" ");
-//             }
-//             System.out.println();
-//         }
-// }}
-
-// Pattern 20 — Hollow rectangle
-// * * * * *
-// *       *
-// *       *
-// *       *
-// * * * * *
+package Day_2;
+//Given an integer n. You need to recreate the pattern given below for any value of N. Let's say for N = 5, the pattern should look like as below:
+// *****
+// *****
+// *****
+// *****
+// *****
 // public class patterns {
 //     public static void main(String[] args){
 //         for(int i=1;i<=5;i++){
 //             for(int j=1;j<=5;j++){
-//                  if(i==1 || i==5 || j==1 || j==5){
-//                      System.out.print("* ");
-//                  }
-//                  else{
-//                      System.out.print("  ");
-//                  }
+//                 System.out.print("*");
 //             }
 //             System.out.println();
 //         }
-// }}
+//     }
+// }
+
+
+// Pattern 2 — Right triangle stars
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
+// public class patterns {
+//     public static void main(String[] args){
+//         for(int i=1;i<=5;i++){
+//             for(int j=1;j<=i;j++){
+//                 System.out.print("* ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+// Pattern 3 — Right triangle numbers
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4
+// 1 2 3 4 5
+// public class patterns{
+//     public static void main(String[] args){
+//         for(int i=1;i<=5;i++){
+//             for(int j=1;j<=i;j++){
+//                 System.out.print(j+" ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+// Pattern 4 — Same number triangle
+// 1
+// 2 2
+// 3 3 3
+// 4 4 4 4
+// 5 5 5 5 5
+// public class patterns{
+//     public static void main(String[] args){
+//         for(int i=1;i<=5;i++){
+//             for(int j=1;j<=i;j++){
+//                 System.out.print(i+" ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+// Pattern 5 — Inverted right triangle stars
+// * * * * *
+// * * * *
+// * * *
+// * *
+// *
+// public class patterns{
+//     public static void main(String[] args){
+//         for(int i=1;i<=5;i++){
+//             for(int j=1;j<=(5-i+1);j++){
+//                 System.out.print("* ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+// Pattern 6 — Inverted number triangle
+// 1 2 3 4 5
+// 1 2 3 4
+// 1 2 3
+// 1 2
+// 1
+// public class patterns{
+//     public static void main(String[] args){
+//         for(int i=1;i<=5;i++){
+//             for(int j=1;j<=(5-i+1);j++){
+//                 System.out.print(j+" ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+// Pattern 7 — Star pyramid
+//     *
+//    * *
+//   * * *
+//  * * * *
+// * * * * *
+// public class patterns{
+//     public static void main(String[] args){
+//         for(int i=1;i<=5;i++){
+//             //space
+//             for(int j=1;j<=(5-i);j++){
+//                 System.out.print(" ");
+//             }
+//             for(int j=1;j<=i;j++){
+//                 System.out.print(" * ");
+//             }
+//             System.out.println();
+//         }
+//         }
+//     }
+
+// Pattern 8 — Inverted star pyramid
+// * * * * *
+//  * * * *
+//   * * *
+//    * *
+//     *
+// public class patterns{
+//     public static void main(String[] args){
+//         for(int i=1;i<=5;i++){
+//             //space
+//             for(int j=1;j<=(i-1);j++){
+//                 System.out.print(" ");
+//             }
+//             for(int j=1;j<=(5-i+1);j++){
+//                 System.out.print(" * ");
+//             }
+//         System.out.println();
+//         }
+//      }
+//  }
+
+// Pattern 9 — Diamond
+//     *
+//    * *
+//   * * *
+//  * * * *
+// * * * * *
+//  * * * *
+//   * * *
+//    * *
+//     *
+// public class patterns{
+//     public static void main(String[] args){
+//         //upper 
+//         for(int i=1;i<=5;i++){
+//             //space
+//             for(int j=1;j<=(5-i);j++){
+//                 System.out.print(" ");
+//             }
+//             //star
+//             for(int j=1;j<=i;j++){
+//                 System.out.print(" * ");
+//             }
+//             System.out.println();
+//         }
+//         //lower
+//         for(int i=1;i<=4;i++){
+//             //space
+//             for(int j=1;j<=(i-1);j++){
+//                 System.out.print(" ");
+//             }
+//             //star
+//             for(int j=1;j<=(5-i);j++){
+//                 System.out.print(" * ");
+//             }
+//             System.out.println();
+//         }
+//         }
+//      }
+
+// Pattern 10 — Half diamond
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
+// * * * *
+// * * *
+// * *
+// *
+// public class patterns{
+//     public static void main(String[] args){
+//         //upper 
+//         for(int i=1;i<=5;i++){
+//             //space
+            
+//             //star
+//             for(int j=1;j<=i;j++){
+//                 System.out.print("* ");
+//             }
+//             for(int j=1;j<=(5-i);j++){
+//                 System.out.print(" ");
+//             }
+//             System.out.println();
+//         }
+//         //lower
+//         for(int i=1;i<=4;i++){
+//             //space
+            
+//             //star
+//             for(int j=1;j<=(5-i);j++){
+//                 System.out.print("* ");
+//             }
+//             for(int j=1;j<=(i-1);j++){
+//                 System.out.print(" ");
+//             }
+//             System.out.println();
+//         }
+//         }
+     
+//  }
+
+// Pattern 11 — Binary triangle
+// 1
+// 0 1
+// 1 0 1
+// 0 1 0 1
+// 1 0 1 0 1
+// public class patterns{
+//     public static void main(String[] args){
+//         for(int i=1;i<=5;i++){
+//             for(int j=1;j<=i;j++){
+//                 if((i+j)%2==0){
+//                     System.out.print("1");
+//                 }
+//                 else{
+//                     System.out.println("0");
+//                 }
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
