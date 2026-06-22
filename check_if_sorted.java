@@ -1,0 +1,14 @@
+//check if the array is sorted or not
+// public class check_if_sorted {
+//     public static void main(String[] args){
+//         int[] arr={1,2,3,4,5,6,7};
+//         boolean sorted=true;
+//         for(int i=1;i<arr.length-1;i++){
+//             if(arr[i]>arr[i+1]){
+//                 sorted=false;
+//                 break;
+//             }
+//         }
+//         System.out.print(sorted?"array is sorted":"array is not sorted");
+//     }
+// }
